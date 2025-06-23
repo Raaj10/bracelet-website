@@ -18,5 +18,4 @@ An elegant, responsive website showcasing handmade bracelets built with love by 
 - Interactive UI with hover effects  
 - Links to Instagram & WhatsApp  
 
-## 🙌 Made with love by  
-Raj Kishore & Pooja ❤️
+
