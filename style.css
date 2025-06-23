@@ -1,32 +1,91 @@
+/* 👇 Apply Google Font */
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Roboto', sans-serif;
     background-color: #f8f9fa;
     margin: 0;
     padding: 0;
 }
 
+/* 👇 Make headings bold */
 h1, h2 {
     font-weight: 700;
 }
 
+/* 👇 Card base style */
 .card {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     border: none;
     border-radius: 12px;
-    transition: transform 0.2s ease;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    flex: 1 1 100%;
+    margin-bottom: 20px;
 }
 
+/* 👇 Card hover effect */
 .card:hover {
     transform: scale(1.03);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
 }
 
+/* 👇 Image zoom on hover */
 .card-img-top {
-    height: 250px;
+    width: 100%;
+    height: auto;
     object-fit: cover;
     border-top-left-radius: 12px;
     border-top-right-radius: 12px;
+    transition: transform 0.3s ease;
 }
 
+.card:hover .card-img-top {
+    transform: scale(1.05);
+}
+
+/* 👇 Button animations */
+.btn {
+    transition: all 0.2s ease-in-out;
+}
+
+.btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* 👇 Footer styling */
 footer {
     font-size: 0.9rem;
+}
+
+/* 👇 Row layout adjustment for responsiveness */
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+/* 👇 Mobile Styles */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 1.8rem;
+    }
+
+    h2 {
+        font-size: 1.4rem;
+    }
+
+    .card {
+        margin: 0 auto;
+        width: 100%;
+    }
+
+    header, footer {
+        padding: 1rem;
+        text-align: center;
+    }
+
+    .btn {
+        width: 100%;
+        margin-bottom: 0.5rem;
+    }
 }
